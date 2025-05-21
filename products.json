@@ -1,0 +1,27 @@
+    {
+        "id": 4,
+        "title": "womens-high-rise-wide-leg-trouser Sample",
+        "description": "Womens Trouser Sample",
+        "status": "approved",
+        "price": "100.00",
+        "compare_price": "100.00",
+        "unit_price": "100.00",
+        "stock_quantity": 1,
+        "sku": "AS-DAD",
+        "created_at": "2025-05-12T12:50:57.325274Z",
+        "updated_at": "2025-05-12T12:58:14.829670Z",
+        "manufacturer": 7,
+        "store": 3,
+        "techpack": 9,
+        "media": [
+            {
+                "id": 4,
+                "media": "/media/samples/womens-high-rise-wide-leg-trouser.jpg",
+                "is_featured": false,
+                "created_at": "2025-05-12T12:50:57.334272Z",
+                "updated_at": "2025-05-12T12:50:57.334272Z",
+                "sample": 4
+            }
+        ],
+        "attributes": []
+    }
