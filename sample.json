@@ -1,80 +1,255 @@
-{
-    "id": 3,
-    "title": "Shirt",
-    "description": "Sample for a trendy shirt",
-    "status": "approved",
-    "price": "0.55",
-    "compare_price": "1.25",
-    "unit_price": "0.66",
-    "stock_quantity": 1,
-    "sku": "AS-DA",
-    "created_at": "2025-05-11T21:53:36.283124Z",
-    "updated_at": "2025-05-11T21:54:47.142871Z",
-    "manufacturer": 7,
-    "store": 3,
-    "techpack": 8,
-    "media": [
-        {
-            "id": 3,
-            "media": "/media/samples/jg5.png",
-            "is_featured": false,
-            "created_at": "2025-05-11T21:53:36.288130Z",
-            "updated_at": "2025-05-11T21:53:36.288130Z",
-            "sample": 3
-        }
-    ],
-    "attributes": [
-        {
-            "id": 3,
-            "name": "color",
-            "created_at": "2025-05-11T21:53:36.290124Z",
-            "updated_at": "2025-05-11T21:53:36.290124Z",
-            "sample": 3,
-            "values": [
-                {
-                    "id": 3,
-                    "name": "orange",
-                    "created_at": "2025-05-11T21:53:36.296129Z",
-                    "updated_at": "2025-05-11T21:53:36.296129Z",
-                    "sample": 3,
-                    "attribute": 3,
-                    "images": [
-                        {
-                            "id": 3,
-                            "image": "/media/attribute_value_images/orange-shirt_1pGGHdv.jpg",
-                            "created_at": "2025-05-20T12:41:30.996078Z",
-                            "updated_at": "2025-05-20T12:41:30.996078Z",
-                            "attribute_value": 3
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "name": "Size",
-            "created_at": "2025-05-20T12:36:58.699010Z",
-            "updated_at": "2025-05-20T12:36:58.699010Z",
-            "sample": 3,
-            "values": [
-                {
-                    "id": 4,
-                    "name": "Large",
-                    "created_at": "2025-05-20T12:37:26.181265Z",
-                    "updated_at": "2025-05-20T12:37:26.181265Z",
-                    "sample": 3,
-                    "attribute": 4,
-                    "images": [
-                        {
-                            "id": 2,
-                            "image": "/media/attribute_value_images/large-shirt.jpg",
-                            "created_at": "2025-05-20T12:39:46.222204Z",
-                            "updated_at": "2025-05-20T12:41:15.076877Z",
-                            "attribute_value": 4
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "title": "Test Sample",
+        "category": "1",
+        "description": "Test Sample Description",
+        "status": "approved",
+        "created_at": "2025-05-07T22:10:23.219264Z",
+        "updated_at": "2025-05-07T22:20:25.518458Z",
+        "manufacturer": 7,
+        "store": 3,
+        "techpack": 2,
+        "media": [
+            {
+                "id": 1,
+                "media": "/media/samples/mandashboard_mlrr4pX.webp",
+                "is_featured": false,
+                "created_at": "2025-05-07T22:10:23.227264Z",
+                "updated_at": "2025-05-07T22:10:23.227264Z",
+                "sample": 1
+            }
+        ],
+        "attributes": [
+            {
+                "id": 1,
+                "name": "color",
+                "created_at": "2025-05-07T22:10:23.230263Z",
+                "updated_at": "2025-05-07T22:10:23.230263Z",
+                "sample": 1,
+                "values": [
+                    {
+                        "id": 1,
+                        "name": "green",
+                        "price": "1.00",
+                        "compare_price": "1.00",
+                        "unit_price": "1.00",
+                        "sku": "555",
+                        "created_at": "2025-05-07T22:10:23.235269Z",
+                        "updated_at": "2025-05-23T23:51:50.620735Z",
+                        "sample": 1,
+                        "attribute": 1,
+                        "images": [
+                            {
+                                "id": 1,
+                                "image": "/media/attribute_value_images/Database_Architecture_d28L3y0.jpg",
+                                "created_at": "2025-05-07T22:10:23.460983Z",
+                                "updated_at": "2025-05-07T22:10:23.460983Z",
+                                "attribute_value": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Shirt",
+        "category": "1",
+        "description": "Sample for a trendy shirt",
+        "status": "approved",
+        "created_at": "2025-05-11T21:53:36.283124Z",
+        "updated_at": "2025-05-11T21:54:47.142871Z",
+        "manufacturer": 7,
+        "store": 3,
+        "techpack": 8,
+        "media": [
+            {
+                "id": 3,
+                "media": "/media/samples/jg5.png",
+                "is_featured": false,
+                "created_at": "2025-05-11T21:53:36.288130Z",
+                "updated_at": "2025-05-11T21:53:36.288130Z",
+                "sample": 3
+            }
+        ],
+        "attributes": [
+            {
+                "id": 3,
+                "name": "color",
+                "created_at": "2025-05-11T21:53:36.290124Z",
+                "updated_at": "2025-05-11T21:53:36.290124Z",
+                "sample": 3,
+                "values": [
+                    {
+                        "id": 3,
+                        "name": "orange",
+                        "price": "1.00",
+                        "compare_price": "1.00",
+                        "unit_price": "1.00",
+                        "sku": "444",
+                        "created_at": "2025-05-11T21:53:36.296129Z",
+                        "updated_at": "2025-05-23T23:51:45.851672Z",
+                        "sample": 3,
+                        "attribute": 3,
+                        "images": [
+                            {
+                                "id": 3,
+                                "image": "/media/attribute_value_images/orange-shirt_1pGGHdv.jpg",
+                                "created_at": "2025-05-20T12:41:30.996078Z",
+                                "updated_at": "2025-05-20T12:41:30.996078Z",
+                                "attribute_value": 3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Size",
+                "created_at": "2025-05-20T12:36:58.699010Z",
+                "updated_at": "2025-05-20T12:36:58.699010Z",
+                "sample": 3,
+                "values": [
+                    {
+                        "id": 4,
+                        "name": "Large",
+                        "price": "1.00",
+                        "compare_price": "1.00",
+                        "unit_price": "1.00",
+                        "sku": "333",
+                        "created_at": "2025-05-20T12:37:26.181265Z",
+                        "updated_at": "2025-05-23T23:51:38.646104Z",
+                        "sample": 3,
+                        "attribute": 4,
+                        "images": [
+                            {
+                                "id": 2,
+                                "image": "/media/attribute_value_images/large-shirt.jpg",
+                                "created_at": "2025-05-20T12:39:46.222204Z",
+                                "updated_at": "2025-05-20T12:41:15.076877Z",
+                                "attribute_value": 4
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "womens-high-rise-wide-leg-trouser Sample",
+        "category": "1",
+        "description": "Womens Trouser Sample",
+        "status": "approved",
+        "created_at": "2025-05-12T12:50:57.325274Z",
+        "updated_at": "2025-05-12T12:58:14.829670Z",
+        "manufacturer": 7,
+        "store": 3,
+        "techpack": 9,
+        "media": [
+            {
+                "id": 4,
+                "media": "/media/samples/womens-high-rise-wide-leg-trouser.jpg",
+                "is_featured": false,
+                "created_at": "2025-05-12T12:50:57.334272Z",
+                "updated_at": "2025-05-12T12:50:57.334272Z",
+                "sample": 4
+            }
+        ],
+        "attributes": []
+    },
+    {
+        "id": 5,
+        "title": "New Sample",
+        "category": "apparel",
+        "description": "zzz",
+        "status": "rejected",
+        "created_at": "2025-05-22T21:54:13.324814Z",
+        "updated_at": "2025-05-23T01:32:30.802895Z",
+        "manufacturer": 7,
+        "store": 3,
+        "techpack": 2,
+        "media": [
+            {
+                "id": 6,
+                "media": "/media/samples/womens-high-rise-wide-leg-trouser_CKnxqgK.jpg",
+                "is_featured": false,
+                "created_at": "2025-05-22T21:54:13.421797Z",
+                "updated_at": "2025-05-22T21:54:13.421797Z",
+                "sample": 5
+            },
+            {
+                "id": 7,
+                "media": "/media/samples/womens-high-rise-wide-leg-trouser_Clr6v4i.jpg",
+                "is_featured": false,
+                "created_at": "2025-05-22T21:54:13.426205Z",
+                "updated_at": "2025-05-22T21:54:13.426205Z",
+                "sample": 5
+            }
+        ],
+        "attributes": [
+            {
+                "id": 7,
+                "name": "red",
+                "created_at": "2025-05-22T21:54:13.427954Z",
+                "updated_at": "2025-05-22T21:54:13.427954Z",
+                "sample": 5,
+                "values": [
+                    {
+                        "id": 7,
+                        "name": "small",
+                        "price": "1.11",
+                        "compare_price": "1.11",
+                        "unit_price": "1.11",
+                        "sku": "222",
+                        "created_at": "2025-05-22T21:54:13.431709Z",
+                        "updated_at": "2025-05-23T23:51:32.889478Z",
+                        "sample": 5,
+                        "attribute": 7,
+                        "images": [
+                            {
+                                "id": 6,
+                                "image": "/media/attribute_value_images/womens-high-rise-wide-leg-trouser_1paOmde.jpg",
+                                "created_at": "2025-05-22T21:54:13.526372Z",
+                                "updated_at": "2025-05-22T21:54:13.526372Z",
+                                "attribute_value": 7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "name": "green",
+                "created_at": "2025-05-22T21:54:13.528097Z",
+                "updated_at": "2025-05-22T21:54:13.528097Z",
+                "sample": 5,
+                "values": [
+                    {
+                        "id": 8,
+                        "name": "small",
+                        "price": "1.11",
+                        "compare_price": "1.11",
+                        "unit_price": "1.11",
+                        "sku": "111",
+                        "created_at": "2025-05-22T21:54:13.530655Z",
+                        "updated_at": "2025-05-23T23:51:25.752644Z",
+                        "sample": 5,
+                        "attribute": 8,
+                        "images": [
+                            {
+                                "id": 7,
+                                "image": "/media/attribute_value_images/womens-high-rise-wide-leg-trouser_DLjBMhn.jpg",
+                                "created_at": "2025-05-22T21:54:13.533831Z",
+                                "updated_at": "2025-05-22T21:54:13.533831Z",
+                                "attribute_value": 8
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

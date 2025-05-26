@@ -27,6 +27,7 @@ const {
 const accessTokens = require('./lib/tokenStore');
 
 app.use('/shopify/products', require('./routers/products'))
+app.use('/shopify/orders', require('./routers/order'));
 
 function buildAuthURL(shop) {
   const redirectUri = `${SHOPIFY_HOST}/shopify/callback`;

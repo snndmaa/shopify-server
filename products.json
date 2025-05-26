@@ -1,27 +1,159 @@
+[
     {
-        "id": 4,
-        "title": "womens-high-rise-wide-leg-trouser Sample",
-        "description": "Womens Trouser Sample",
-        "status": "approved",
-        "price": "100.00",
-        "compare_price": "100.00",
-        "unit_price": "100.00",
-        "stock_quantity": 1,
-        "sku": "AS-DAD",
-        "created_at": "2025-05-12T12:50:57.325274Z",
-        "updated_at": "2025-05-12T12:58:14.829670Z",
-        "manufacturer": 7,
-        "store": 3,
-        "techpack": 9,
-        "media": [
+        "id": 3,
+        "name": "Shirt",
+        "description": "Sample for a trendy shirt",
+        "stock": 2,
+        "is_active": true,
+        "sample": {
+            "id": 3,
+            "title": "Shirt",
+            "description": "Sample for a trendy shirt",
+            "manufacturer": {
+                "id": 7,
+                "first_name": "Manufacturer",
+                "last_name": "One",
+                "phone_number": "2344342342",
+                "email": "manufacturer@one.com"
+            },
+            "sample_media": [
+                {
+                    "id": 3,
+                    "media": "http://localhost:8000/media/samples/jg5.png",
+                    "is_featured": false,
+                    "created_at": "2025-05-11T21:53:36.288130Z",
+                    "updated_at": "2025-05-11T21:53:36.288130Z",
+                    "sample": 3
+                }
+            ],
+            "sample_attributes": [
+                {
+                    "name": "color",
+                    "values": [
+                        {
+                            "id": 3,
+                            "name": "orange",
+                            "price": "1.00",
+                            "compare_price": "1.00",
+                            "unit_price": "1.00",
+                            "sku": "444",
+                            "images": [
+                                {
+                                    "id": 3,
+                                    "image": "/media/attribute_value_images/orange-shirt_1pGGHdv.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Size",
+                    "values": [
+                        {
+                            "id": 4,
+                            "name": "Large",
+                            "price": "1.00",
+                            "compare_price": "1.00",
+                            "unit_price": "1.00",
+                            "sku": "333",
+                            "images": [
+                                {
+                                    "id": 2,
+                                    "image": "/media/attribute_value_images/large-shirt.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "created_at": "2025-05-11T21:53:36.283124Z"
+        },
+        "store": {
+            "id": 3,
+            "name": "Test Store",
+            "usid": "5s4be-xe",
+            "image": "http://localhost:8000/media/store/mandashboard_IEtC10O.webp",
+            "desc": "Test Store Description",
+            "domain": "",
+            "created_at": "2025-05-07T14:05:32.024001Z",
+            "updated_at": "2025-05-22T00:07:04.417206Z",
+            "user": 4
+        },
+        "purchase_orders": [
             {
-                "id": 4,
-                "media": "/media/samples/womens-high-rise-wide-leg-trouser.jpg",
-                "is_featured": false,
-                "created_at": "2025-05-12T12:50:57.334272Z",
-                "updated_at": "2025-05-12T12:50:57.334272Z",
-                "sample": 4
+                "po_number": "PO-3-20250524-001",
+                "status": "Completed",
+                "quantity": 1,
+                "fabric": "zz",
+                "packaging": "zz",
+                "payment_terms": "zz",
+                "variants": [
+                    {
+                        "id": 6,
+                        "variant_name": "color",
+                        "quantity": 1,
+                        "unit": "Pieces",
+                        "unit_price": "19.24",
+                        "total_price": 19.24
+                    },
+                    {
+                        "id": 7,
+                        "variant_name": "Size",
+                        "quantity": 1,
+                        "unit": "Pieces",
+                        "unit_price": "32.00",
+                        "total_price": 32.0
+                    }
+                ],
+                "total_order_value": 51.24,
+                "shipping_address_detail": {
+                    "id": 1,
+                    "title": "Office",
+                    "address": "1 Code Street",
+                    "city": "New York",
+                    "state": "New York",
+                    "postal_code": "00000",
+                    "country": "United States",
+                    "contact_phone": "0000000000",
+                    "store": 3
+                },
+                "created_at": "2025-05-23T23:55:29.110102Z"
             }
         ],
-        "attributes": []
+        "price_range": {
+            "min_price": 19.24,
+            "max_price": 32.0,
+            "currency": "USD"
+        },
+        "available_variants": {
+            "color": [
+                {
+                    "value_id": 3,
+                    "value": "orange",
+                    "unit_price": 19.24,
+                    "images": [
+                        {
+                            "id": 3,
+                            "image": "/media/attribute_value_images/orange-shirt_1pGGHdv.jpg"
+                        }
+                    ]
+                }
+            ],
+            "Size": [
+                {
+                    "value_id": 4,
+                    "value": "Large",
+                    "unit_price": 32.0,
+                    "images": [
+                        {
+                            "id": 2,
+                            "image": "/media/attribute_value_images/large-shirt.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        "created_at": "2025-05-24T01:55:33.916588Z",
+        "updated_at": "2025-05-24T01:55:33.917105Z"
     }
+]
