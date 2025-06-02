@@ -28,6 +28,7 @@ const accessTokens = require('./lib/tokenStore');
 
 app.use('/shopify/products', require('./routers/products'))
 app.use('/shopify/orders', require('./routers/order'));
+app.use('/fedex/', require('./routers/fedex-track'));
 
 function buildAuthURL(shop) {
   const redirectUri = `${SHOPIFY_HOST}/shopify/callback`;
