@@ -1,129 +1,1200 @@
-[
-    {
-        "id": "gid://shopify/Order/6238458183897",
-        "name": "#1002",
-        "tags": [
-            "spade-order"
-        ],
-        "createdAt": "2025-05-25T14:14:12Z",
-        "updatedAt": "2025-06-01T19:07:42Z",
-        "processedAt": "2025-05-25T14:14:12Z",
-        "displayFinancialStatus": "PAID",
-        "displayFulfillmentStatus": "FULFILLED",
-        "totalPriceSet": {
-            "shopMoney": {
-                "amount": "1.0",
-                "currencyCode": "USD"
-            }
-        },
-        "subtotalPriceSet": {
-            "shopMoney": {
-                "amount": "1.0",
-                "currencyCode": "USD"
-            }
-        },
-        "totalTaxSet": {
-            "shopMoney": {
-                "amount": "0.0",
-                "currencyCode": "USD"
-            }
-        },
-        "totalShippingPriceSet": {
-            "shopMoney": {
-                "amount": "0.0",
-                "currencyCode": "USD"
-            }
-        },
-        "totalDiscountsSet": {
-            "shopMoney": {
-                "amount": "0.0",
-                "currencyCode": "USD"
-            }
-        },
-        "currencyCode": "USD",
-        "customer": {
-            "id": "gid://shopify/Customer/8164582064345",
-            "email": "ayumu.hirano@example.com",
-            "firstName": "Ayumu",
-            "lastName": "Hirano",
-            "phone": "+16135550127",
-            "tags": []
-        },
-        "billingAddress": null,
-        "shippingAddress": {
-            "address1": "1 Company Road",
-            "address2": "",
-            "city": "Greeleyville",
-            "province": "South Carolina",
-            "country": "United States",
-            "zip": "29056",
-            "phone": "+12269786220",
-            "name": "User One"
-        },
-        "lineItems": {
-            "nodes": [
-                {
-                    "id": "gid://shopify/LineItem/15046742442201",
-                    "title": "Shirt",
-                    "quantity": 1,
-                    "sku": "444-333",
-                    "vendor": "spaderun",
-                    "product": {
-                        "id": "gid://shopify/Product/9189301747929",
-                        "title": "Shirt",
-                        "tags": [
-                            "color",
-                            "Manufacturer One",
-                            "Shirt",
-                            "Size",
-                            "spade-product",
-                            "Test Store"
-                        ]
-                    },
-                    "variant": {
-                        "id": "gid://shopify/ProductVariant/46650171916505",
-                        "title": "orange / Large",
-                        "price": "1.00"
-                    },
-                    "originalUnitPriceSet": {
-                        "shopMoney": {
-                            "amount": "1.0",
-                            "currencyCode": "USD"
-                        }
-                    }
-                }
-            ]
-        },
-        "fulfillments": [
+{
+    "transactionId": "c68292bb-4f8d-4b6f-8841-aa3ef5275017",
+    "output": {
+        "completeTrackResults": [
             {
-                "id": "gid://shopify/Fulfillment/5663743443161",
-                "status": "SUCCESS",
-                "trackingInfo": [
+                "trackingNumber": "123456789012",
+                "trackResults": [
                     {
-                        "number": "GSDIU9E8308UA",
-                        "url": "https://www.fedex.com/fedextrack/?trknbr=GSDIU9E8308UA"
+                        "trackingNumberInfo": {
+                            "trackingNumber": "123456789012",
+                            "trackingNumberUniqueId": "2460650000~123456789012~FX",
+                            "carrierCode": "FDXE"
+                        },
+                        "additionalTrackingInfo": {
+                            "nickname": "",
+                            "hasAssociatedShipments": false
+                        },
+                        "shipperInformation": {
+                            "address": {
+                                "residential": false
+                            }
+                        },
+                        "recipientInformation": {
+                            "address": {
+                                "residential": false
+                            }
+                        },
+                        "latestStatusDetail": {
+                            "code": "PU",
+                            "derivedCode": "HP",
+                            "statusByLocale": "We have your package",
+                            "description": "Picked up",
+                            "scanLocation": {
+                                "city": "POZNAN",
+                                "countryCode": "PL",
+                                "residential": false,
+                                "countryName": "Poland"
+                            },
+                            "ancillaryDetails": [
+                                {
+                                    "reason": "46",
+                                    "reasonDescription": "",
+                                    "action": "",
+                                    "actionDescription": ""
+                                }
+                            ]
+                        },
+                        "dateAndTimes": [
+                            {
+                                "type": "ACTUAL_PICKUP",
+                                "dateTime": "2024-12-05T15:26:00+01:00"
+                            },
+                            {
+                                "type": "SHIP",
+                                "dateTime": "2024-12-05T00:00:00+00:00"
+                            },
+                            {
+                                "type": "ACTUAL_TENDER",
+                                "dateTime": "2024-12-05T15:26:00+01:00"
+                            }
+                        ],
+                        "availableImages": [],
+                        "packageDetails": {
+                            "packagingDescription": {
+                                "type": ""
+                            }
+                        },
+                        "shipmentDetails": {
+                            "possessionStatus": true
+                        },
+                        "scanEvents": [
+                            {
+                                "date": "2024-12-05T15:26:00+01:00",
+                                "eventType": "PU",
+                                "eventDescription": "Picked up",
+                                "exceptionCode": "",
+                                "exceptionDescription": "",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "POZNAN",
+                                    "postalCode": "61324",
+                                    "countryCode": "PL",
+                                    "residential": false,
+                                    "countryName": "Poland"
+                                },
+                                "locationId": "RPZA",
+                                "locationType": "PICKUP_LOCATION",
+                                "derivedStatusCode": "PU",
+                                "derivedStatus": "Picked up"
+                            }
+                        ],
+                        "availableNotifications": [
+                            "ON_DELIVERY",
+                            "ON_EXCEPTION",
+                            "ON_ESTIMATED_DELIVERY"
+                        ],
+                        "deliveryDetails": {
+                            "deliveryAttempts": "0",
+                            "receivedByName": "Signature Not Req",
+                            "deliveryOptionEligibilityDetails": [
+                                {
+                                    "option": "INDIRECT_SIGNATURE_RELEASE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "REDIRECT_TO_HOLD_AT_LOCATION",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "REROUTE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "RESCHEDULE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "RETURN_TO_SHIPPER",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "DISPUTE_DELIVERY",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "SUPPLEMENT_ADDRESS",
+                                    "eligibility": "INELIGIBLE"
+                                }
+                            ]
+                        },
+                        "originLocation": {
+                            "locationContactAndAddress": {
+                                "address": {
+                                    "city": "POZNAN",
+                                    "countryCode": "PL",
+                                    "residential": false,
+                                    "countryName": "Poland"
+                                }
+                            },
+                            "locationId": "RPZA"
+                        },
+                        "serviceDetail": {
+                            "type": "",
+                            "description": "",
+                            "shortDescription": ""
+                        },
+                        "standardTransitTimeWindow": {
+                            "window": {}
+                        },
+                        "estimatedDeliveryTimeWindow": {
+                            "window": {}
+                        },
+                        "goodsClassificationCode": "",
+                        "returnDetail": {}
+                    },
+                    {
+                        "trackingNumberInfo": {
+                            "trackingNumber": "123456789012",
+                            "trackingNumberUniqueId": "2460661000~123456789012~FX",
+                            "carrierCode": "FDXE"
+                        },
+                        "additionalTrackingInfo": {
+                            "nickname": "",
+                            "hasAssociatedShipments": false
+                        },
+                        "shipperInformation": {
+                            "contact": {},
+                            "address": {
+                                "city": "Shanghai, Shanghai",
+                                "countryCode": "CN",
+                                "residential": false,
+                                "countryName": "China"
+                            }
+                        },
+                        "recipientInformation": {
+                            "contact": {},
+                            "address": {
+                                "city": "NEW YORK",
+                                "stateOrProvinceCode": "NY",
+                                "countryCode": "US",
+                                "residential": false,
+                                "countryName": "United States"
+                            }
+                        },
+                        "latestStatusDetail": {
+                            "code": "IT",
+                            "derivedCode": "OW",
+                            "statusByLocale": "On the way",
+                            "description": "On the way",
+                            "scanLocation": {
+                                "city": "ANCHORAGE",
+                                "stateOrProvinceCode": "AK",
+                                "countryCode": "US",
+                                "residential": false,
+                                "countryName": "United States"
+                            },
+                            "ancillaryDetails": [
+                                {
+                                    "reason": "71",
+                                    "reasonDescription": "Package available for clearance",
+                                    "action": "",
+                                    "actionDescription": ""
+                                }
+                            ]
+                        },
+                        "dateAndTimes": [
+                            {
+                                "type": "ACTUAL_PICKUP",
+                                "dateTime": "2024-12-20T15:43:00+13:00"
+                            },
+                            {
+                                "type": "SHIP",
+                                "dateTime": "2024-12-16T00:00:00+00:00"
+                            },
+                            {
+                                "type": "ACTUAL_TENDER",
+                                "dateTime": "2024-12-20T15:43:00+13:00"
+                            }
+                        ],
+                        "availableImages": [],
+                        "specialHandlings": [
+                            {
+                                "type": "DELIVER_WEEKDAY",
+                                "description": "Deliver Weekday",
+                                "paymentType": "OTHER"
+                            }
+                        ],
+                        "packageDetails": {
+                            "packagingDescription": {
+                                "type": "YOUR_PACKAGING",
+                                "description": "Your Packaging"
+                            },
+                            "sequenceNumber": "1",
+                            "count": "1",
+                            "weightAndDimensions": {
+                                "weight": [
+                                    {
+                                        "value": "7.0",
+                                        "unit": "KG"
+                                    },
+                                    {
+                                        "value": "15.43",
+                                        "unit": "LB"
+                                    }
+                                ],
+                                "dimensions": [
+                                    {
+                                        "length": 30,
+                                        "width": 42,
+                                        "height": 26,
+                                        "units": "CM"
+                                    },
+                                    {
+                                        "length": 11,
+                                        "width": 16,
+                                        "height": 10,
+                                        "units": "IN"
+                                    }
+                                ]
+                            },
+                            "packageContent": []
+                        },
+                        "shipmentDetails": {
+                            "possessionStatus": true,
+                            "weight": [
+                                {
+                                    "value": "7.0",
+                                    "unit": "KG"
+                                },
+                                {
+                                    "value": "15.43",
+                                    "unit": "LB"
+                                }
+                            ]
+                        },
+                        "scanEvents": [
+                            {
+                                "date": "2025-04-23T13:44:00-08:00",
+                                "eventType": "IT",
+                                "eventDescription": "On the way",
+                                "exceptionCode": "71",
+                                "exceptionDescription": "Package available for clearance",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "ANCHORAGE",
+                                    "stateOrProvinceCode": "AK",
+                                    "postalCode": "99502",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                },
+                                "locationId": "ANCIP",
+                                "locationType": "FEDEX_FACILITY",
+                                "derivedStatusCode": "IT",
+                                "derivedStatus": "In transit"
+                            },
+                            {
+                                "date": "2025-03-22T14:50:00-08:00",
+                                "eventType": "IT",
+                                "eventDescription": "On the way",
+                                "exceptionCode": "71",
+                                "exceptionDescription": "Package available for clearance",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "ANCHORAGE",
+                                    "stateOrProvinceCode": "AK",
+                                    "postalCode": "99502",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                },
+                                "locationId": "ANCIP",
+                                "locationType": "FEDEX_FACILITY",
+                                "derivedStatusCode": "IT",
+                                "derivedStatus": "In transit"
+                            },
+                            {
+                                "date": "2025-02-17T14:52:00-06:00",
+                                "eventType": "PU",
+                                "eventDescription": "Picked up",
+                                "exceptionCode": "",
+                                "exceptionDescription": "",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "MEMPHIS",
+                                    "stateOrProvinceCode": "TN",
+                                    "postalCode": "38125",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                },
+                                "locationId": "PXPB",
+                                "locationType": "PICKUP_LOCATION",
+                                "derivedStatusCode": "PU",
+                                "derivedStatus": "Picked up"
+                            },
+                            {
+                                "date": "2025-01-25T14:10:00-09:00",
+                                "eventType": "IT",
+                                "eventDescription": "On the way",
+                                "exceptionCode": "71",
+                                "exceptionDescription": "Package available for clearance",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "ANCHORAGE",
+                                    "stateOrProvinceCode": "AK",
+                                    "postalCode": "99502",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                },
+                                "locationId": "ANCIP",
+                                "locationType": "FEDEX_FACILITY",
+                                "derivedStatusCode": "IT",
+                                "derivedStatus": "In transit"
+                            },
+                            {
+                                "date": "2025-01-24T01:10:00+00:00",
+                                "eventType": "DO",
+                                "eventDescription": "",
+                                "exceptionCode": "",
+                                "exceptionDescription": "",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "residential": false
+                                },
+                                "locationId": "YYZAA",
+                                "locationType": "NON_FEDEX_FACILITY",
+                                "derivedStatusCode": "DO",
+                                "derivedStatus": "Dropped off"
+                            },
+                            {
+                                "date": "2024-12-15T20:42:25-06:00",
+                                "eventType": "OC",
+                                "eventDescription": "Shipment information sent to FedEx",
+                                "exceptionCode": "",
+                                "exceptionDescription": "",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "residential": false
+                                },
+                                "locationType": "CUSTOMER",
+                                "derivedStatusCode": "IN",
+                                "derivedStatus": "Label created"
+                            }
+                        ],
+                        "availableNotifications": [
+                            "ON_DELIVERY",
+                            "ON_EXCEPTION",
+                            "ON_ESTIMATED_DELIVERY"
+                        ],
+                        "deliveryDetails": {
+                            "actualDeliveryAddress": {
+                                "city": "NEW YORK",
+                                "stateOrProvinceCode": "NY",
+                                "countryCode": "US",
+                                "residential": false,
+                                "countryName": "United States"
+                            },
+                            "deliveryAttempts": "0",
+                            "deliveryOptionEligibilityDetails": [
+                                {
+                                    "option": "INDIRECT_SIGNATURE_RELEASE",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "REDIRECT_TO_HOLD_AT_LOCATION",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "REROUTE",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "RESCHEDULE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "RETURN_TO_SHIPPER",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "DISPUTE_DELIVERY",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "SUPPLEMENT_ADDRESS",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                }
+                            ]
+                        },
+                        "originLocation": {
+                            "locationContactAndAddress": {
+                                "address": {
+                                    "city": "SHANGHAI",
+                                    "countryCode": "CN",
+                                    "residential": false,
+                                    "countryName": "China"
+                                }
+                            },
+                            "locationId": "KOWA"
+                        },
+                        "destinationLocation": {
+                            "locationContactAndAddress": {
+                                "address": {
+                                    "city": "NEW YORK",
+                                    "stateOrProvinceCode": "NY",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                }
+                            },
+                            "locationType": ""
+                        },
+                        "lastUpdatedDestinationAddress": {
+                            "city": "NEW YORK",
+                            "stateOrProvinceCode": "NY",
+                            "countryCode": "CO",
+                            "residential": false,
+                            "countryName": "Colombia"
+                        },
+                        "serviceDetail": {
+                            "type": "FEDEX_INTERNATIONAL_PRIORITY",
+                            "description": "FedEx International Priority",
+                            "shortDescription": "IPED"
+                        },
+                        "standardTransitTimeWindow": {
+                            "window": {}
+                        },
+                        "estimatedDeliveryTimeWindow": {
+                            "window": {}
+                        },
+                        "goodsClassificationCode": "",
+                        "returnDetail": {}
+                    },
+                    {
+                        "trackingNumberInfo": {
+                            "trackingNumber": "123456789012",
+                            "trackingNumberUniqueId": "2460812000~123456789012~FX",
+                            "carrierCode": "FDXE"
+                        },
+                        "additionalTrackingInfo": {
+                            "nickname": "",
+                            "hasAssociatedShipments": false
+                        },
+                        "shipperInformation": {
+                            "contact": {},
+                            "address": {
+                                "residential": false
+                            }
+                        },
+                        "recipientInformation": {
+                            "contact": {},
+                            "address": {
+                                "residential": false
+                            }
+                        },
+                        "latestStatusDetail": {
+                            "code": "PU",
+                            "derivedCode": "HP",
+                            "statusByLocale": "We have your package",
+                            "description": "Picked up",
+                            "scanLocation": {
+                                "city": "MEMPHIS",
+                                "stateOrProvinceCode": "TN",
+                                "countryCode": "US",
+                                "residential": false,
+                                "countryName": "United States"
+                            }
+                        },
+                        "dateAndTimes": [
+                            {
+                                "type": "ACTUAL_PICKUP",
+                                "dateTime": "2025-05-16T07:34:00-05:00"
+                            },
+                            {
+                                "type": "SHIP",
+                                "dateTime": "2025-05-16T00:00:00+00:00"
+                            },
+                            {
+                                "type": "ACTUAL_TENDER",
+                                "dateTime": "2025-05-16T07:34:00-05:00"
+                            }
+                        ],
+                        "availableImages": [],
+                        "specialHandlings": [
+                            {
+                                "type": "DELIVER_WEEKDAY",
+                                "description": "Deliver Weekday",
+                                "paymentType": "OTHER"
+                            },
+                            {
+                                "type": "CUSTOMS_CLEARED",
+                                "description": "Customs Cleared",
+                                "paymentType": "OTHER"
+                            }
+                        ],
+                        "packageDetails": {
+                            "packagingDescription": {
+                                "type": "YOUR_PACKAGING",
+                                "description": "Your Packaging"
+                            }
+                        },
+                        "shipmentDetails": {
+                            "possessionStatus": true
+                        },
+                        "scanEvents": [
+                            {
+                                "date": "2025-05-16T07:34:00-05:00",
+                                "eventType": "PU",
+                                "eventDescription": "Picked up",
+                                "exceptionCode": "",
+                                "exceptionDescription": "",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "MEMPHIS",
+                                    "stateOrProvinceCode": "TN",
+                                    "postalCode": "38125",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                },
+                                "locationId": "DMSA",
+                                "locationType": "PICKUP_LOCATION",
+                                "derivedStatusCode": "PU",
+                                "derivedStatus": "Picked up"
+                            }
+                        ],
+                        "availableNotifications": [
+                            "ON_DELIVERY",
+                            "ON_EXCEPTION",
+                            "ON_ESTIMATED_DELIVERY"
+                        ],
+                        "deliveryDetails": {
+                            "deliveryAttempts": "0",
+                            "deliveryOptionEligibilityDetails": [
+                                {
+                                    "option": "INDIRECT_SIGNATURE_RELEASE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "REDIRECT_TO_HOLD_AT_LOCATION",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "REROUTE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "RESCHEDULE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "RETURN_TO_SHIPPER",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "DISPUTE_DELIVERY",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "SUPPLEMENT_ADDRESS",
+                                    "eligibility": "INELIGIBLE"
+                                }
+                            ]
+                        },
+                        "originLocation": {
+                            "locationContactAndAddress": {
+                                "address": {
+                                    "city": "MEMPHIS",
+                                    "stateOrProvinceCode": "TN",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                }
+                            },
+                            "locationId": "DMSA"
+                        },
+                        "destinationLocation": {
+                            "locationContactAndAddress": {
+                                "address": {
+                                    "residential": false
+                                }
+                            },
+                            "locationType": ""
+                        },
+                        "lastUpdatedDestinationAddress": {
+                            "countryCode": "FR",
+                            "residential": false,
+                            "countryName": "France"
+                        },
+                        "serviceDetail": {
+                            "type": "INTERNATIONAL_PRIORITY",
+                            "description": "International Priority",
+                            "shortDescription": "IP"
+                        },
+                        "standardTransitTimeWindow": {
+                            "window": {}
+                        },
+                        "estimatedDeliveryTimeWindow": {
+                            "window": {}
+                        },
+                        "goodsClassificationCode": "",
+                        "returnDetail": {}
+                    },
+                    {
+                        "trackingNumberInfo": {
+                            "trackingNumber": "123456789012",
+                            "trackingNumberUniqueId": "2460815000~123456789012~FX",
+                            "carrierCode": "FDXE"
+                        },
+                        "additionalTrackingInfo": {
+                            "nickname": "",
+                            "hasAssociatedShipments": false
+                        },
+                        "shipperInformation": {
+                            "address": {
+                                "city": "Shenzhen, Guangdong",
+                                "countryCode": "CN",
+                                "residential": false,
+                                "countryName": "China"
+                            }
+                        },
+                        "recipientInformation": {
+                            "address": {
+                                "city": "SAINT PAUL",
+                                "stateOrProvinceCode": "MN",
+                                "countryCode": "US",
+                                "residential": false,
+                                "countryName": "United States"
+                            }
+                        },
+                        "latestStatusDetail": {
+                            "code": "IT",
+                            "derivedCode": "OW",
+                            "statusByLocale": "On the way",
+                            "description": "On the way",
+                            "scanLocation": {
+                                "city": "WINSTON SALEM",
+                                "stateOrProvinceCode": "NC",
+                                "countryCode": "US",
+                                "residential": false,
+                                "countryName": "United States"
+                            },
+                            "ancillaryDetails": [
+                                {
+                                    "reason": "14",
+                                    "reasonDescription": "",
+                                    "action": "",
+                                    "actionDescription": ""
+                                }
+                            ]
+                        },
+                        "dateAndTimes": [
+                            {
+                                "type": "ACTUAL_PICKUP",
+                                "dateTime": "2025-05-23T08:10:00+02:00"
+                            },
+                            {
+                                "type": "SHIP",
+                                "dateTime": "2025-05-19T00:00:00+00:00"
+                            },
+                            {
+                                "type": "ACTUAL_TENDER",
+                                "dateTime": "2025-05-23T08:10:00+02:00"
+                            },
+                            {
+                                "type": "ATTEMPTED_DELIVERY",
+                                "dateTime": "2025-05-23T08:10:00+02:00"
+                            }
+                        ],
+                        "availableImages": [],
+                        "specialHandlings": [
+                            {
+                                "type": "DELIVER_WEEKDAY",
+                                "description": "Deliver Weekday",
+                                "paymentType": "OTHER"
+                            }
+                        ],
+                        "packageDetails": {
+                            "packagingDescription": {
+                                "type": "YOUR_PACKAGING",
+                                "description": "Your Packaging"
+                            },
+                            "sequenceNumber": "1",
+                            "count": "1",
+                            "weightAndDimensions": {
+                                "weight": [
+                                    {
+                                        "value": "5.0",
+                                        "unit": "KG"
+                                    },
+                                    {
+                                        "value": "11.02",
+                                        "unit": "LB"
+                                    }
+                                ]
+                            },
+                            "packageContent": []
+                        },
+                        "shipmentDetails": {
+                            "possessionStatus": true,
+                            "weight": [
+                                {
+                                    "value": "5.0",
+                                    "unit": "KG"
+                                },
+                                {
+                                    "value": "11.02",
+                                    "unit": "LB"
+                                }
+                            ]
+                        },
+                        "scanEvents": [
+                            {
+                                "date": "2025-06-06T10:07:00-04:00",
+                                "eventType": "IT",
+                                "eventDescription": "On the way",
+                                "exceptionCode": "",
+                                "exceptionDescription": "",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "WINSTON SALEM",
+                                    "stateOrProvinceCode": "NC",
+                                    "postalCode": "27105",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                },
+                                "locationId": "INTA",
+                                "locationType": "FEDEX_FACILITY",
+                                "derivedStatusCode": "IT",
+                                "derivedStatus": "In transit"
+                            },
+                            {
+                                "date": "2025-05-31T07:41:00-04:00",
+                                "eventType": "IT",
+                                "eventDescription": "On the way",
+                                "exceptionCode": "",
+                                "exceptionDescription": "",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "PLAIN CITY",
+                                    "stateOrProvinceCode": "OH",
+                                    "postalCode": "43064",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                },
+                                "locationId": "WCOLG",
+                                "locationType": "FEDEX_FACILITY",
+                                "derivedStatusCode": "IT",
+                                "derivedStatus": "In transit"
+                            },
+                            {
+                                "date": "2025-05-23T08:10:00+02:00",
+                                "eventType": "DE",
+                                "eventDescription": "Delivery exception",
+                                "exceptionCode": "17",
+                                "exceptionDescription": "A request was made to change this delivery date.",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "SESTO ULTERIANO",
+                                    "postalCode": "20098",
+                                    "countryCode": "IT",
+                                    "residential": false,
+                                    "countryName": "Italy"
+                                },
+                                "locationId": "MILOS",
+                                "locationType": "DELIVERY_LOCATION",
+                                "derivedStatusCode": "DE",
+                                "derivedStatus": "Delivery exception"
+                            },
+                            {
+                                "date": "2025-05-19T08:02:06-05:00",
+                                "eventType": "OC",
+                                "eventDescription": "Shipment information sent to FedEx",
+                                "exceptionCode": "",
+                                "exceptionDescription": "",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "residential": false
+                                },
+                                "locationType": "CUSTOMER",
+                                "derivedStatusCode": "IN",
+                                "derivedStatus": "Label created"
+                            }
+                        ],
+                        "availableNotifications": [
+                            "ON_DELIVERY",
+                            "ON_EXCEPTION",
+                            "ON_ESTIMATED_DELIVERY"
+                        ],
+                        "deliveryDetails": {
+                            "deliveryAttempts": "1",
+                            "deliveryOptionEligibilityDetails": [
+                                {
+                                    "option": "INDIRECT_SIGNATURE_RELEASE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "REDIRECT_TO_HOLD_AT_LOCATION",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "REROUTE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "RESCHEDULE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "RETURN_TO_SHIPPER",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "DISPUTE_DELIVERY",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "SUPPLEMENT_ADDRESS",
+                                    "eligibility": "INELIGIBLE"
+                                }
+                            ],
+                            "destinationServiceArea": "EXPRESS_FIRST_DELIVERY_ATTEMPTED_HTML"
+                        },
+                        "originLocation": {
+                            "locationContactAndAddress": {
+                                "address": {
+                                    "city": "SHENZHEN",
+                                    "countryCode": "CN",
+                                    "residential": false,
+                                    "countryName": "China"
+                                }
+                            },
+                            "locationId": "SXJA"
+                        },
+                        "destinationLocation": {
+                            "locationContactAndAddress": {
+                                "address": {
+                                    "city": "SAINT PAUL",
+                                    "stateOrProvinceCode": "MN",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                }
+                            },
+                            "locationType": ""
+                        },
+                        "lastUpdatedDestinationAddress": {
+                            "city": "SAINT PAUL",
+                            "stateOrProvinceCode": "MN",
+                            "countryCode": "US",
+                            "residential": false,
+                            "countryName": "United States"
+                        },
+                        "serviceCommitMessage": {
+                            "message": "You can pick up your package after at FedEx Facility  2275 WALNUT STREET, or we'll try to deliver again during the next business day.",
+                            "type": "FIRST_DELIVERY_ATTEMPTED"
+                        },
+                        "serviceDetail": {
+                            "type": "FEDEX_INTERNATIONAL_PRIORITY",
+                            "description": "FedEx International Priority",
+                            "shortDescription": "IPED"
+                        },
+                        "standardTransitTimeWindow": {
+                            "window": {}
+                        },
+                        "estimatedDeliveryTimeWindow": {
+                            "window": {}
+                        },
+                        "goodsClassificationCode": "",
+                        "returnDetail": {}
+                    },
+                    {
+                        "trackingNumberInfo": {
+                            "trackingNumber": "123456789012",
+                            "trackingNumberUniqueId": "2460830000~123456789012~FX",
+                            "carrierCode": "FDXE"
+                        },
+                        "additionalTrackingInfo": {
+                            "nickname": "",
+                            "hasAssociatedShipments": false
+                        },
+                        "shipperInformation": {
+                            "contact": {},
+                            "address": {
+                                "city": "COLUMBIA",
+                                "stateOrProvinceCode": "SC",
+                                "countryCode": "US",
+                                "residential": false,
+                                "countryName": "United States"
+                            }
+                        },
+                        "recipientInformation": {
+                            "contact": {},
+                            "address": {
+                                "city": "NOWRICH",
+                                "countryCode": "GB",
+                                "residential": false,
+                                "countryName": "United Kingdom/Channel Islands"
+                            }
+                        },
+                        "latestStatusDetail": {
+                            "code": "DE",
+                            "derivedCode": "DU",
+                            "statusByLocale": "Delivery updated",
+                            "description": "Delivery exception",
+                            "scanLocation": {
+                                "city": "SESTO ULTERIANO",
+                                "countryCode": "IT",
+                                "residential": false,
+                                "countryName": "Italy"
+                            },
+                            "ancillaryDetails": [
+                                {
+                                    "reason": "17",
+                                    "reasonDescription": "A request was made to change this delivery date.",
+                                    "action": "",
+                                    "actionDescription": ""
+                                }
+                            ]
+                        },
+                        "dateAndTimes": [
+                            {
+                                "type": "ACTUAL_PICKUP",
+                                "dateTime": "2025-06-03T19:21:00-04:00"
+                            },
+                            {
+                                "type": "SHIP",
+                                "dateTime": "2025-06-03T00:00:00+00:00"
+                            },
+                            {
+                                "type": "ACTUAL_TENDER",
+                                "dateTime": "2025-06-03T19:21:00-04:00"
+                            },
+                            {
+                                "type": "ATTEMPTED_DELIVERY",
+                                "dateTime": "2025-06-04T10:54:00+02:00"
+                            }
+                        ],
+                        "availableImages": [],
+                        "specialHandlings": [
+                            {
+                                "type": "DELIVER_WEEKDAY",
+                                "description": "Deliver Weekday",
+                                "paymentType": "OTHER"
+                            }
+                        ],
+                        "packageDetails": {
+                            "packagingDescription": {
+                                "type": "YOUR_PACKAGING",
+                                "description": "Your Packaging"
+                            },
+                            "sequenceNumber": "1",
+                            "count": "1",
+                            "weightAndDimensions": {
+                                "weight": [
+                                    {
+                                        "value": "28.6",
+                                        "unit": "KG"
+                                    },
+                                    {
+                                        "value": "63.05",
+                                        "unit": "LB"
+                                    }
+                                ],
+                                "dimensions": [
+                                    {
+                                        "length": 21,
+                                        "width": 15,
+                                        "height": 15,
+                                        "units": "IN"
+                                    },
+                                    {
+                                        "length": 53,
+                                        "width": 38,
+                                        "height": 38,
+                                        "units": "CM"
+                                    }
+                                ]
+                            },
+                            "packageContent": []
+                        },
+                        "shipmentDetails": {
+                            "possessionStatus": true,
+                            "weight": [
+                                {
+                                    "value": "28.6",
+                                    "unit": "KG"
+                                },
+                                {
+                                    "value": "63.05",
+                                    "unit": "LB"
+                                }
+                            ]
+                        },
+                        "scanEvents": [
+                            {
+                                "date": "2025-06-04T10:54:00+02:00",
+                                "eventType": "DE",
+                                "eventDescription": "Delivery exception",
+                                "exceptionCode": "17",
+                                "exceptionDescription": "A request was made to change this delivery date.",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "SESTO ULTERIANO",
+                                    "postalCode": "20098",
+                                    "countryCode": "IT",
+                                    "residential": false,
+                                    "countryName": "Italy"
+                                },
+                                "locationId": "MILOS",
+                                "locationType": "DELIVERY_LOCATION",
+                                "derivedStatusCode": "DE",
+                                "derivedStatus": "Delivery exception"
+                            },
+                            {
+                                "date": "2025-06-03T19:21:00-04:00",
+                                "eventType": "PU",
+                                "eventDescription": "Picked up",
+                                "exceptionCode": "",
+                                "exceptionDescription": "",
+                                "scanLocation": {
+                                    "streetLines": [
+                                        ""
+                                    ],
+                                    "city": "COLUMBIA",
+                                    "stateOrProvinceCode": "SC",
+                                    "postalCode": "29209",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                },
+                                "locationId": "USCA",
+                                "locationType": "PICKUP_LOCATION",
+                                "derivedStatusCode": "PU",
+                                "derivedStatus": "Picked up"
+                            }
+                        ],
+                        "availableNotifications": [
+                            "ON_DELIVERY",
+                            "ON_EXCEPTION",
+                            "ON_ESTIMATED_DELIVERY"
+                        ],
+                        "deliveryDetails": {
+                            "deliveryAttempts": "1",
+                            "deliveryOptionEligibilityDetails": [
+                                {
+                                    "option": "INDIRECT_SIGNATURE_RELEASE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "REDIRECT_TO_HOLD_AT_LOCATION",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "REROUTE",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "RESCHEDULE",
+                                    "eligibility": "INELIGIBLE"
+                                },
+                                {
+                                    "option": "RETURN_TO_SHIPPER",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "DISPUTE_DELIVERY",
+                                    "eligibility": "POSSIBLY_ELIGIBLE"
+                                },
+                                {
+                                    "option": "SUPPLEMENT_ADDRESS",
+                                    "eligibility": "INELIGIBLE"
+                                }
+                            ],
+                            "destinationServiceArea": "DELIVERY_CHANGE_REQUESTED"
+                        },
+                        "originLocation": {
+                            "locationContactAndAddress": {
+                                "address": {
+                                    "city": "COLUMBIA",
+                                    "stateOrProvinceCode": "SC",
+                                    "countryCode": "US",
+                                    "residential": false,
+                                    "countryName": "United States"
+                                }
+                            },
+                            "locationId": "USCA"
+                        },
+                        "destinationLocation": {
+                            "locationContactAndAddress": {
+                                "address": {
+                                    "city": "NOWRICH",
+                                    "countryCode": "GB",
+                                    "residential": false,
+                                    "countryName": "United Kingdom/Channel Islands"
+                                }
+                            },
+                            "locationType": ""
+                        },
+                        "lastUpdatedDestinationAddress": {
+                            "city": "NOWRICH",
+                            "countryCode": "GB",
+                            "residential": false,
+                            "countryName": "United Kingdom/Channel Islands"
+                        },
+                        "serviceCommitMessage": {
+                            "message": "A request was made to change this delivery date.",
+                            "type": "DELIVERY_CHANGE_REQUESTED"
+                        },
+                        "serviceDetail": {
+                            "type": "INTERNATIONAL_PRIORITY",
+                            "description": "International Priority",
+                            "shortDescription": "IP"
+                        },
+                        "standardTransitTimeWindow": {
+                            "window": {
+                                "ends": "2025-06-06T18:00:00+01:00"
+                            }
+                        },
+                        "estimatedDeliveryTimeWindow": {
+                            "window": {}
+                        },
+                        "goodsClassificationCode": "",
+                        "returnDetail": {}
                     }
                 ]
             }
-        ],
-        "metafields": {
-            "edges": []
-        },
-        "note": null,
-        "paymentGatewayNames": [
-            "manual"
-        ],
-        "test": false,
-        "totalWeight": "0",
-        "totalTipReceivedSet": {
-            "shopMoney": {
-                "amount": "0.0",
-                "currencyCode": "USD"
-            }
-        },
-        "refunds": [],
-        "shippingLines": {
-            "nodes": []
-        }
+        ]
     }
-]
+}
