@@ -11,11 +11,13 @@ const path = require('path');
 const multer = require('multer');
 const FormData = require('form-data');
 const morgan = require('morgan')
+const bodyParser = require('body-parser');
 
 app.use(cors()); // Allow all origins for development
 app.use(express.json());
 app.use(cookieParser());
-app.use(morgan('tiny'))
+app.use(morgan('tiny'));
+app.use(bodyParser.json());
 
 const {
   SHOPIFY_API_KEY,
@@ -29,6 +31,7 @@ const accessTokens = require('./lib/tokenStore');
 app.use('/shopify/products', require('./routers/products'))
 app.use('/shopify/orders', require('./routers/order'));
 app.use('/fedex/', require('./routers/fedex-track'));
+app.use('/shopify/pay', require('./routers/billing'));
 
 function buildAuthURL(shop) {
   const redirectUri = `${SHOPIFY_HOST}/shopify/callback`;
@@ -157,6 +160,6 @@ app.post('/shopify/test/product', async (req, res) => {
   }
 });
 
-app.listen(3001, () => {
+app.listen(3001, '0.0.0.0', () => {
   console.log('Server running on port 3001');
 });
