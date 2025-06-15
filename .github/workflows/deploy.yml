@@ -1,4 +1,4 @@
-name: Deploy to EC2
+name: Robust Deploy to EC2
 
 on:
   push:
@@ -7,27 +7,93 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Copy files to EC2
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${{ secrets.AWS_HOST }}
-          username: ${{ secrets.AWS_USERNAME }}
-          key: ${{ secrets.AWS_KEY }}
-          source: "."  # You can customize to only send `dist/` or backend folder
-          target: ${{ secrets.DEPLOY_PATH }}
-
-      - name: SSH into EC2 and restart app
+      - name: Pre-deployment Check
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.AWS_HOST }}
           username: ${{ secrets.AWS_USERNAME }}
           key: ${{ secrets.AWS_KEY }}
+          timeout: 30s
+          script: |
+            echo "Instance is responsive"
+            free -h
+            df -h
+
+      - name: Copy files to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.AWS_HOST }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.AWS_KEY }}
+          timeout: 300s
+          source: "."
+          target: ${{ secrets.DEPLOY_PATH }}
+          overwrite: true
+
+      - name: Setup Dependencies (if needed)
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.AWS_HOST }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.AWS_KEY }}
+          timeout: 300s
+          script: |
+            # Check and install Node.js if missing
+            if ! command -v node &> /dev/null; then
+              echo "Installing Node.js..."
+              curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - || \
+              curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash - || \
+              sudo dnf install -y nodejs npm
+              sudo apt-get install -y nodejs || sudo yum install -y nodejs || true
+            fi
+            
+            # Check and install PM2 if missing
+            if ! command -v pm2 &> /dev/null; then
+              echo "Installing PM2..."
+              sudo npm install -g pm2
+            fi
+
+      - name: Deploy Application
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.AWS_HOST }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.AWS_KEY }}
+          timeout: 180s
           script: |
             cd ${{ secrets.DEPLOY_PATH }}
-            npm install --production
-            pm2 restart ${{ vars.PM2_APP_NAME }} || pm2 start index.js --name ${{ vars.PM2_APP_NAME }}
+            echo "Current directory: $(pwd)"
+            
+            # Install dependencies with memory-friendly options
+            echo "Installing dependencies..."
+            npm install --production --prefer-offline --no-audit --progress=false
+            
+            # Stop existing PM2 process gracefully
+            pm2 stop spade-node-app 2>/dev/null || true
+            sleep 2
+            
+            # Start the application
+            pm2 start index.js --name spade-node-app --max-memory-restart 500M
+            pm2 save
+            
+            echo "Deployment completed successfully"
+            pm2 status
+
+      - name: Post-deployment Health Check
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.AWS_HOST }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.AWS_KEY }}
+          timeout: 30s
+          script: |
+            echo "Health check..."
+            pm2 status
+            echo "Memory usage after deployment:"
+            free -h
