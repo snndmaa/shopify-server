@@ -1,0 +1,33 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Copy files to EC2
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.AWS_HOST }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.AWS_KEY }}
+          source: "."  # You can customize to only send `dist/` or backend folder
+          target: ${{ secrets.DEPLOY_PATH }}
+
+      - name: SSH into EC2 and restart app
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.AWS_HOST }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.AWS_KEY }}
+          script: |
+            cd ${{ secrets.DEPLOY_PATH }}
+            npm install --production
+            pm2 restart ${{ vars.PM2_APP_NAME }} || pm2 start index.js --name ${{ vars.PM2_APP_NAME }}
