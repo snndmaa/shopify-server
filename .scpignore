@@ -1,0 +1,12 @@
+node_modules/
+.git/
+.env
+*.log
+*.pem
+*.sqlite
+coverage/
+build/
+dist/
+.next/
+.vscode/
+tmp/
