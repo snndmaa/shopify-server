@@ -35,11 +35,6 @@ jobs:
           source: "."
           target: ${{ secrets.DEPLOY_PATH }}
           overwrite: true
-          exclude: |
-            .git/
-            .github/
-            node_modules/
-            *.log
 
       - name: Setup Dependencies (if needed)
         uses: appleboy/ssh-action@v1.0.3
