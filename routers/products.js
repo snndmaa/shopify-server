@@ -4,7 +4,7 @@ const router = express.Router();
 const accessTokens = require('../lib/tokenStore');
 
 // Set the base image URL for local Django server
-const base_image_url = 'http://localhost:8000';
+const base_image_url = process.env.SPADE_HOST_URL || 'http://localhost:8000/media';
 
 // Normalize input to a unified product structure
 function normalizeProductInput(input) {
